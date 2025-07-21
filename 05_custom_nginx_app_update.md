@@ -129,6 +129,7 @@ spec:
 ## 🚀 Step 6: Deploy to Kubernetes
 
 ```bash
+kubectl config use-context kind-kind     
 kubectl apply -f manifests/
 kubectl get pods
 kubectl get svc

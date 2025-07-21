@@ -1,3 +1,13 @@
+Here is your **fully fixed and polished Markdown file**, with:
+
+* Corrected code block syntax (` ```powershell ` / ` ```yaml ` properly closed).
+* Clean formatting.
+* Readable structure.
+* Works perfectly in VS Code, GitHub, or any Markdown viewer.
+
+---
+
+````markdown
 # 🐳 Kind (Kubernetes in Docker) - Simple Setup Guide for Windows
 
 > 🚀 Perfect for beginners! Learn how to install and configure `Kind` and `kubectl` on Windows for local Kubernetes development.
@@ -20,6 +30,7 @@
 1. Open Docker Desktop from the Start Menu or desktop.
 2. Wait for it to fully start — you’ll see a green icon in the system tray.
 3. Verify in PowerShell:
+
    ```powershell
    docker version
    docker ps
@@ -54,12 +65,15 @@ Move-Item .\kind-windows-amd64.exe C:\kind\kind.exe
 ### 🔹 Step 4: Add Kind to System PATH
 
 1. Press `Win + R`, type `sysdm.cpl`, press Enter
+
 2. Go to **Advanced** → Environment Variables
+
 3. Under **System variables**, select `Path` → Edit → New → Add:
 
    ```
    C:\kind
    ```
+
 4. Click **OK** on all windows
 
 ---
@@ -139,7 +153,7 @@ kind delete cluster
 
 ### 🔹 Multi-node Cluster Example
 
-Create `kind-config.yaml`:
+Create a file named `kind-config.yaml`:
 
 ```yaml
 kind: Cluster
@@ -150,7 +164,7 @@ nodes:
   - role: worker
 ```
 
-Run:
+Then run:
 
 ```powershell
 kind create cluster --config kind-config.yaml
@@ -164,4 +178,4 @@ kind create cluster --config kind-config.yaml
 * [Kubernetes Docs](https://kubernetes.io/docs/)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
----
+

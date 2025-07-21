@@ -163,7 +163,7 @@ Change the content (e.g., update the welcome message).
 
 ```bash
 docker build -t custom-nginx:1.1 .
-kind load docker-image custom-nginx:1.1 --name webapp-cluster
+kind load docker-image custom-nginx:1.1 --name kind
 ```
 
 ### 📝 Step 3: Update the Deployment YAML

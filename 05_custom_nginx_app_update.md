@@ -78,7 +78,7 @@ COPY index.html /usr/share/nginx/html/index.html
 ```bash
 cd app
 docker build -t custom-nginx:1.0 .
-kind load docker-image custom-nginx:1.0 --name webapp-cluster
+kind load docker-image custom-nginx:1.0 --name kind
 ```
 
 ---
